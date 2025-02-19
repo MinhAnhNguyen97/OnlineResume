@@ -1,0 +1,202 @@
+#layout {
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: repeat(12,1fr);
+    /* border: 1px solid red;
+    /* I can't add grid-template-columns because it make header body and footer into each column */
+}
+
+.header-section-logo {
+    grid-column: 1 / 2; /* Place in first column */
+    grid-row: 1 / 2; /* Place in first row */
+    justify-self: start;
+    width: 60px; /* Adjust logo size */
+    height: 60px;
+    display: block;
+    margin: auto;
+}
+.navigation-menu {
+    display: flex;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    margin: 0px;
+    text-decoration: none;
+    color: black; /* Color for text */
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+    grid-column: 1; /* Start at column 2 and span across */
+    grid-row: 2;
+    margin-top: 20px;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers items vertically */
+}
+
+.navigation-menu__item{
+    display: flex;
+    background-color: #B9E1E4;
+    margin-right: 16px;
+}
+
+.navigation-menu__link {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.main-content {
+    height: 1050px;
+    padding: 70px;
+    font-style: italic;
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px;
+    grid-column: 2/13;
+    grid-row: 1/2;
+    min-height: 80vh;
+    flex: 1;
+}
+.page-name p {
+    color: black; /* Color for text */
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    text-align: right;
+    background-color: #B9E1E4;
+}
+.section-name {
+    align-items: center; /* Centers text vertically */
+    text-align: center; /* Ensures text is aligned */
+    font-style: normal;
+    text-align: left;
+    font-weight: normal;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top:20px;
+}
+.text-background {
+    padding: 50px;
+    margin-bottom: 30px; /* Adds space below the first div */
+    background-image: url(images/photo-1518837695005-2083093ee35b.jpeg); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    color: rgb(255, 255, 255); /* Text color */
+    /* padding: 50px; Adjust padding for spacing */
+    text-align: center; /* Centers the text */
+    font-size: 25px;
+}
+
+.div1 {
+    width: 100%; /* Makes it span the full width */
+    max-width: none; /* Ensures no restriction on width */
+    margin: 0 auto; /* Centers the div */
+    padding: 20px; /* Adds space inside */
+    box-sizing: border-box; /* Ensures padding doesn’t shrink the div */
+    text-align: right;
+    padding-bottom: 40px;
+}
+.div1 p {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.wrap {
+    width: 150px; /* Adjust image size */
+    height: auto;
+    float: left; /* Floats image to the left so text wraps around it */
+    shape-outside: circle(); /* Makes text wrap around the image in a circular shape */
+    clip-path: circle(); /* Clips image into a circle */
+}
+
+.flex-container {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    /* justify-content: space-between; Distributes space between image containers */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px; /* Optional: Adds space between the image containers */
+  } 
+.image-container {
+    flex: 1 1 30%px; /* Each container takes equal space */
+    max-width:30%;
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    background: transparent;
+  }
+.image-container figcaption {
+    font-size: 15px !important;
+} 
+.image-container img {
+    max-width: 70%; /* Ensures images are responsive */
+    height: auto; /* Maintains aspect ratio */
+
+  }
+
+.footer-section {
+    height: 22px;
+    background-color: #F0D0EE;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 22px;
+    display: inline-block;
+    margin: 8px;
+    padding: 5px;
+    float: right;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight:normal;
+    font-family: 'Courier New', Courier, monospace;
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    grid-row: 3;
+    grid-column: 1/13;
+    margin-top: auto;
+}
+
+
+/* For small screens (less than 400px), make text smaller */
+@media (max-width: 400px) {
+    p {
+        font-size: 14px; /* Reduce font size for small screens */
+    }
+}
+
+/* For medium screens (between 400px and 1000px), keep a moderate size */
+@media (max-width: 1000px) {
+    p {
+        font-size: 16px; /* Slightly larger for medium screens */
+    }
+}
+
+/* For large screens (above 1000px), make text bigger */
+@media (min-width: 1001px) {
+    p {
+        font-size: 18px; /* Increase font size for big screens */
+    }
+}
+
+@media (max-width: 768px) { /* When screen width is 768px or less */
+    .navigation-menu {
+        width: 80%;  /* Reduce width */
+        font-size: 14px; /* Make text smaller */
+        padding: 5px; /* Reduce padding */
+    }
+
+    .navigation-menu button {
+        padding: 8px 12px; /* Make buttons smaller */
+        font-size: 14px; /* Reduce button text size */
+    }
+}
+
+/* Ensure consistent scaling of pictures in flex box for smaller screens but did not work. Worked but don't know how*/
+/* Try many ways to make footer sticks to the bottom on smaller screens but did not work. Worked but don't know how */
+
