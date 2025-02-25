@@ -101,7 +101,7 @@
 }
 
 .wrap {
-    width: 150px; /* Adjust image size */
+    width: 70px; /* Adjust image size */
     height: auto;
     float: left; /* Floats image to the left so text wraps around it */
     shape-outside: circle(); /* Makes text wrap around the image in a circular shape */
