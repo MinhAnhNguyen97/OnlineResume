@@ -125,6 +125,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 10px; /* Optional: Adds space between the image containers */
+
   } 
 .image-container {
     flex: 1 1 30%px; /* Each container takes equal space */
@@ -134,6 +135,15 @@
     align-items: center; /* Centers the image vertically */
     background: transparent;
   }
+
+.data-project-container {
+    flex: 1 1 30%px; /* Each container takes equal space */
+    max-width:30%;
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    background: transparent;
+}
 .image-container figcaption {
     font-size: 15px !important;
 } 
