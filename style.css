@@ -9,6 +9,7 @@
     grid-column: 1 / 13; /* Start at column 2 and span across */
     grid-row: 1 / 2 ;
     display: grid;
+    align-items: center; 
     /*justify-content: flex-start;*/
 }
 .header-section-logo {
