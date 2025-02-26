@@ -19,7 +19,9 @@
     width: 60px; /* Adjust logo size */
     height: 60px;
    /*display: block; */
-    margin: auto;
+    justify-self: start; /* Align the logo to the left */
+    align-self: center;  /* Center vertically */
+    margin: 0;           
 }
 .navigation-menu {
     display: flex;         /* Use Flexbox for horizontal alignment */
@@ -36,6 +38,7 @@
     grid-column: 2 / 13; /* Start at column 2 and span across */
     grid-row: 1 / 2 ;
     margin-top: 20px;
+    list-style: none;
     /*flex-direction: row; /* Stacks items vertically */
     /*justify-content: flex-end; /* Centers items vertically */
 }
