@@ -96,27 +96,27 @@
     font-size: 25px;
 }
 
-.div1 {
+/*.div1 {
     width: 100%; /* Makes it span the full width */
-    max-width: none; /* Ensures no restriction on width */
-    margin: 0 auto; /* Centers the div */
-    padding: 20px; /* Adds space inside */
-    box-sizing: border-box; /* Ensures padding doesn’t shrink the div */
+    max-width: none; /* Ensures no restriction on width
+    margin: 0 auto; /* Centers the div 
+    padding: 20px; /* Adds space inside 
+    box-sizing: border-box; /* Ensures padding doesn’t shrink the div 
     text-align: right;
     padding-bottom: 40px;
 }
 .div1 p {
     font-weight: normal;
     font-style: italic;
-}
+}*/
 
-.wrap {
-    width: 70px; /* Adjust image size */
+/*.wrap {
+    width: 70px; /* Adjust image size 
     height: auto;
-    float: left; /* Floats image to the left so text wraps around it */
-    shape-outside: circle(); /* Makes text wrap around the image in a circular shape */
-    clip-path: circle(); /* Clips image into a circle */
-}
+    float: left; /* Floats image to the left so text wraps around it 
+    shape-outside: circle(); /* Makes text wrap around the image in a circular shape 
+    clip-path: circle(); /* Clips image into a circle 
+}*/
 
 .flex-container {
     display: flex;
