@@ -25,8 +25,8 @@
     color: black; /* Color for text */
     font-weight: normal;
     font-family: 'Courier New', Courier, monospace;
-    grid-column: 1; /* Start at column 2 and span across */
-    grid-row: 2;
+    grid-column: 2 / 13; /* Start at column 2 and span across */
+    grid-row: 1 / 2 ;
     margin-top: 20px;
     flex-direction: column; /* Stacks items vertically */
     justify-content: center; /* Centers items vertically */
