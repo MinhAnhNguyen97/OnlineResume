@@ -13,7 +13,7 @@
     /*justify-content: flex-start;*/
 }
 .header-section-logo {
-    grid-column: 1 / 2; /* Place in first column */
+    grid-column: 1 / 3; /* Place in first column */
     grid-row: 1 / 2; /* Place in first row */
     /* justify-content: flex-start;
     width: 60px; /* Adjust logo size */
