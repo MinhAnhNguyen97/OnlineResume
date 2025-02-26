@@ -120,7 +120,7 @@
 
 .flex-container {
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     /* justify-content: space-between; Distributes space between image containers */
     justify-content: center;
     align-items: flex-start;
@@ -138,7 +138,6 @@
 
 .data-project-container {
     flex: 1 1 30%px; /* Each container takes equal space */
-    max-width:30%;
     display: flex;
     justify-content: center; /* Centers the image horizontally */
     align-items: center; /* Centers the image vertically */
