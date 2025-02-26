@@ -61,8 +61,8 @@
     font-size: 40px;
     margin: 10px;
     padding: 10px;
-    grid-column: 2/13;
-    grid-row: 2/3;
+    grid-column: 2/13 !important;
+    grid-row: 2/3 !important;
     min-height: 80vh;
     flex: 1;
 }
