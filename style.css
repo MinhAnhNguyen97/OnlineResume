@@ -14,7 +14,7 @@
 .header-section-logo {
     grid-column: 1 / 2; /* Place in first column */
     grid-row: 1 / 2; /* Place in first row */
-    justify-self: start;
+    justify-content: flex-start;
     width: 60px; /* Adjust logo size */
     height: 60px;
    /*display: block; */
@@ -34,7 +34,7 @@
     grid-row: 1 / 2 ;
     margin-top: 20px;
     /*flex-direction: row; /* Stacks items vertically */
-    justify-content: center; /* Centers items vertically */
+    justify-content: flex-end; /* Centers items vertically */
 }
 
 .navigation-menu__item{
