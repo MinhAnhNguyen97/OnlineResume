@@ -135,7 +135,14 @@
     align-items: center; /* Centers the image vertically */
     background: transparent;
   }
-
+.flex-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; Distributes space between image containers */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px; /* Optional: Adds space between the image containers */
+}
 .data-project-container {
     flex: 1 1 30%px; /* Each container takes equal space */
     display: flex;
