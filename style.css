@@ -19,7 +19,7 @@
     width: 60px; /* Adjust logo size */
     height: 60px;
    /*display: block; */
-    justify-self: center; /* Align the logo to the left */
+    justify-self: left; /* Align the logo to the left */
     align-self: center;  /* Center vertically */
     margin: 0;           
 }
