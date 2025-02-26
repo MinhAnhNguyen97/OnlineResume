@@ -5,7 +5,10 @@
     /* border: 1px solid red;
     /* I can't add grid-template-columns because it make header body and footer into each column */
 }
-
+.header {
+    grid-column: 1 / 13; /* Start at column 2 and span across */
+    grid-row: 1 / 2 ;
+}
 .header-section-logo {
     grid-column: 1 / 2; /* Place in first column */
     grid-row: 1 / 2; /* Place in first row */
