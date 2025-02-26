@@ -139,7 +139,7 @@
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-between; Distributes space between image containers */
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 10px; /* Optional: Adds space between the image containers */
 }
@@ -155,9 +155,8 @@
     color: black;
     font-size: 16px;
     font-weight:normal;
-    grid-column: 1 / 13;
-    grid-row: 2;
 }
+
 .image-container figcaption {
     font-size: 15px !important;
 } 
