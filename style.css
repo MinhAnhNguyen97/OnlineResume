@@ -144,6 +144,7 @@
     align-items: center; /* Centers the image vertically */
     background: transparent;
     font-size: 25px;
+    text-decoration: none;
 }
 .image-container figcaption {
     font-size: 15px !important;
