@@ -21,6 +21,9 @@
     margin: auto;
 }
 .navigation-menu {
+    display: flex;         /* Use Flexbox for horizontal alignment */
+    flex-direction: row;   /* Align items left to right */
+    justify-content: flex-end;
     font-size: 18px;
     padding: 10px;
     text-align: center;
