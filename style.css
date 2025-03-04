@@ -27,7 +27,7 @@
     display: flex;         /* Use Flexbox for horizontal alignment */
     flex-direction: row;   /* Align items left to right */
     justify-content: flex-end;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px;
     text-align: center;
     margin: 0px;
@@ -44,7 +44,7 @@
 }
 
 .navigation-menu__item{
-    background-color: #B9E1E4;
+    background-color: #0DFF00;
     margin-right: 16px;
 }
 
@@ -164,12 +164,12 @@
     margin: 5px auto; /* Reduce spacing */
     padding: 10px;
     background: transparent;
-
+    flex-direction: column; /* Ensures that the image is below the title */
+    align-items: center; /* Centers the content horizontally */
+}
     /*justify-content: center; Centers the image horizontally 
     align-items: center; /* Centers the image vertically 
     background: transparent; */
-
-}
 
 .footer-section {
     height: 22px;
