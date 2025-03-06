@@ -90,33 +90,11 @@
     background-image: url(images/photo-1518837695005-2083093ee35b.jpeg); /* Replace with your image URL */
     background-size: cover; /* Ensures the image covers the entire element */
     background-position: center; /* Centers the image */
-    color: rgb(255, 255, 255); /* Text color */
+    color: rgb(0, 0, 0); /* Text color */
     /* padding: 50px; Adjust padding for spacing */
     text-align: center; /* Centers the text */
     font-size: 25px;
 }
-
-/*.div1 {
-    width: 100%; /* Makes it span the full width
-    max-width: none; /* Ensures no restriction on width
-    margin: 0 auto; /* Centers the div 
-    padding: 20px; /* Adds space inside 
-    box-sizing: border-box; /* Ensures padding doesn’t shrink the div 
-    text-align: right;
-    padding-bottom: 40px;
-}
-.div1 p {
-    font-weight: normal;
-    font-style: italic;
-}*/
-
-/*.wrap {
-    width: 70px; /* Adjust image size 
-    height: auto;
-    float: left; /* Floats image to the left so text wraps around it 
-    shape-outside: circle(); /* Makes text wrap around the image in a circular shape 
-    clip-path: circle(); /* Clips image into a circle 
-}*/
 
 .flex-container {
     display: flex;
@@ -168,12 +146,18 @@
     background: transparent;
     align-items: center; /* Centers the content horizontally */
 }
+
+.data-project-container a {
+    font-style: normal;        /* Removes italic */
+    text-decoration: none;     /* Removes underline */
+    color: inherit;        
+}
     /*justify-content: center; Centers the image horizontally 
     align-items: center; /* Centers the image vertically 
     background: transparent; */
 
-. data-project-container {
-
+.data-project-container img {
+    padding-top: 20px;
     
 }
 
