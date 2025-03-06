@@ -130,40 +130,15 @@
     align-items: center; /* Ensure both flex containers are centered */
     width: 100%;
 }
-
-.flex-container-1,
-.flex-container-2 {
-    display: flex;
-    justify-content: space-between; /* Ensures equal spacing */
-    width: 80%; /* Adjust width to match both containers */
-}
-
-  .flex-container-1 {
+.flex-container-1 {
     display: flex;
     flex-direction: row; /* Three equal columns */
-    /*display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; Distributes space between image containers */
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px; /* Optional: Adds space between the image containers */
-    width: 100%;
-}
-
-.flex-container-2 {
-    display: flex;
-    flex-direction: row; /* Three equal columns */
-    gap: 20px;
-    /*display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; Distributes space between image containers */
-    justify-content: space-evenly;
-    align-items: flex-start;
-    gap: 10px; /* Optional: Adds space between the image containers */
-    width: 100%;
+    justify-content: space-between;
     align-items: center;
+    text-align: center;
+    gap: 0px; /* Optional: Adds space between the image containers */
+    width: 100%;
 }
-
 
 .data-project-container {
     display: flex;
@@ -184,8 +159,12 @@
     font-style: normal;        /* Removes italic */
     text-decoration: none;     /* Removes underline */
     color: inherit;  
-    min-height: 40px;      
-}
+    display: block; /* Ensures the title takes up full width */
+    text-align: center; /* Centers the text */
+    min-height: 40px; /* Ensures all titles have the same height */
+    line-height: 40px; /* Aligns text vertically */
+    }
+          
     /*justify-content: center; Centers the image horizontally 
     align-items: center; /* Centers the image vertically 
     background: transparent; */
