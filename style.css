@@ -122,16 +122,49 @@
     max-width: 70%; /* Ensures images are responsive */
     height: auto; /* Maintains aspect ratio */
 
-  }
+}
+
+.parent-flex {
+    display: flex;
+    flex-direction: column; /* Stack flex containers vertically */
+    align-items: center; /* Ensure both flex containers are centered */
+    width: 100%;
+}
+
+.flex-container-1,
+.flex-container-2 {
+    display: flex;
+    justify-content: space-between; /* Ensures equal spacing */
+    width: 80%; /* Adjust width to match both containers */
+}
+
   .flex-container-1 {
     display: flex;
+    flex-direction: row; /* Three equal columns */
+    /*display: flex;
     flex-direction: row;
     /* justify-content: space-between; Distributes space between image containers */
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px; /* Optional: Adds space between the image containers */
-    width: 100%
+    width: 100%;
 }
+
+.flex-container-2 {
+    display: flex;
+    flex-direction: row; /* Three equal columns */
+    gap: 20px;
+    /*display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; Distributes space between image containers */
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 10px; /* Optional: Adds space between the image containers */
+    width: 100%;
+    align-items: center;
+}
+
+
 .data-project-container {
     display: flex;
     flex-direction: column; /* Ensures that the image is below the title */
@@ -144,13 +177,14 @@
     margin: 5px auto; /* Reduce spacing */
     padding: 10px;
     background: transparent;
-    align-items: center; /* Centers the content horizontally */
+    align-items: flex-start; /* Centers the content horizontally */
 }
 
 .data-project-container a {
     font-style: normal;        /* Removes italic */
     text-decoration: none;     /* Removes underline */
-    color: inherit;        
+    color: inherit;  
+    min-height: 40px;      
 }
     /*justify-content: center; Centers the image horizontally 
     align-items: center; /* Centers the image vertically 
