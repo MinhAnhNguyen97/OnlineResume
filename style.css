@@ -76,7 +76,7 @@
 .page-name p {
     color: black; /* Color for text */
     font-weight: normal;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Baskerville;
     font-style: normal;
     background-color: #B9E1E4;
     display: inline-block;
@@ -90,7 +90,7 @@
     padding-bottom: 0px;
     margin-bottom: 0px;
     margin-top: 20px;
-    font-family: Baskerville;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
 }
 .text-background {
@@ -252,10 +252,16 @@
 }
 
 .contact-info {
+    font-size: 18px;
+    font-family: Baskerville;
+    text-align: right;
+}
+.contact-info a {
     font-style: normal;        /* Removes italic */
     text-decoration: none;     /* Removes underline */
-    color: inherit;  
+    color: black;  
 }
-/* Ensure consistent scaling of pictures in flex box for smaller screens but did not work. Worked but don't know how*/
-/* Try many ways to make footer sticks to the bottom on smaller screens but did not work. Worked but don't know how */
-
+.a-few-words p {
+    font-size: 18px;
+    font-family: Baskerville;
+}
