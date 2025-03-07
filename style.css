@@ -69,12 +69,15 @@
     min-height: 80vh;
     flex: 1;
 }
+.page-name {
+    text-align: right;
+
+}
 .page-name p {
     color: black; /* Color for text */
     font-weight: normal;
     font-family: 'Courier New', Courier, monospace;
     font-style: normal;
-    text-align: right;
     background-color: #B9E1E4;
     display: inline-block;
 }
@@ -86,7 +89,9 @@
     font-weight: normal;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    margin-top:20px;
+    margin-top: 20px;
+    font-family: Baskerville;
+    font-size: 30px;
 }
 .text-background {
     padding: 50px;
@@ -94,10 +99,11 @@
     background-image: url(images/photo-1518837695005-2083093ee35b.jpeg); /* Replace with your image URL */
     background-size: cover; /* Ensures the image covers the entire element */
     background-position: center; /* Centers the image */
-    color: rgb(0, 0, 0); /* Text color */
+    color: #0DFF00; /* Text color */
     /* padding: 50px; Adjust padding for spacing */
     text-align: center; /* Centers the text */
-    font-size: 25px;
+    font-size: 65px;
+    font-family: Baskerville;
 }
 
 .flex-container {
@@ -173,6 +179,7 @@
     min-height: 40px; /* Ensures all titles have the same height */
     line-height: 40px; /* Aligns text vertically */
     width: 100%;
+    font-family: Baskerville;
     }
 
 .data-project-container img {
