@@ -57,10 +57,48 @@
     color: black;
 }
 
+.navigate-to-specific-art {
+    display: flex;         /* Use Flexbox for horizontal alignment */
+    flex-direction: row;   /* Align items left to right */
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0px;
+    text-decoration: none;
+    color: black; /* Color for text */
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+
+    /*grid-column: 2 / 13; /* Start at column 2 and span across */
+    /*grid-row: 1 / 2 ;
+    margin-top: 20px;*/
+    list-style: none;
+}
+.navigate-to-specific-art li {
+    display: inline-block; /* Ensure items stay in one line */
+}
+
+.navigate-to-specific-art a {
+    text-decoration: none; /* Remove underline */
+    color: black;
+    padding: 10px 15px;
+}
+
+.navigation-menu__item-1 {
+    background-color: #0DFF00;
+    list-style: none;
+}
+
+.navigation-menu__link-1 {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+
 .main-content {
     height: 1050px;
     padding: 70px;
-    font-style: italic;
+    font-style: normal;
     font-size: 40px;
     margin: 10px;
     padding: 10px;
@@ -68,6 +106,7 @@
     grid-row: 2/3 !important;
     min-height: 80vh;
     flex: 1;
+    
 }
 .page-name {
     text-align: right;
@@ -100,6 +139,7 @@
     background-size: cover; /* Ensures the image covers the entire element */
     background-position: center; /* Centers the image */
     color: #0DFF00; /* Text color */
+    font-style: italic;
     /* padding: 50px; Adjust padding for spacing */
     text-align: center; /* Centers the text */
     font-size: 65px;
