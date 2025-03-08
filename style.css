@@ -135,16 +135,19 @@
 .text-background {
     padding: 50px;
     margin-bottom: 30px; /* Adds space below the first div */
-    background-image: url(images/photo-1518837695005-2083093ee35b.jpeg); /* Replace with your image URL */
+    background-image: url(images/IMG_6451.JPG); /* Replace with your image URL */
     background-size: cover; /* Ensures the image covers the entire element */
     background-position: center; /* Centers the image */
-    color: #0DFF00; /* Text color */
+    color:  #0DFF00; /* Text color */
+    background-color: #B9E1E4;
     font-style: italic;
-    /* padding: 50px; Adjust padding for spacing */
+    font-style: bold;
+    padding: 50px;
     text-align: center; /* Centers the text */
     font-size: 65px;
-    font-family: Baskerville;
+    font-family: 'Courier New', Courier, monospace;
 }
+
 
 .flex-container {
     display: flex;
