@@ -217,6 +217,19 @@
     float: right;
 }
 
+.image-container a {
+    font-style: normal;        /* Removes italic */
+    text-decoration: none;     /* Removes underline */
+    color: inherit;  
+    display: block; /* Ensures the title takes up full width */
+    text-align: center; /* Centers the text */
+    align-items: center;
+    min-height: 40px; /* Ensures all titles have the same height */
+    line-height: 40px; /* Aligns text vertically */
+    width: 100%;
+    font-family: Baskerville;
+    }
+
 .footer-section a {
     text-decoration: none;
     color: black;
