@@ -146,8 +146,15 @@
     font-size: 15px !important;
 } 
 .image-container img {
-    max-width: 60%; /* Ensures images are responsive */
-    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures images are responsive */
+    height: 150px; /* Maintains aspect ratio */
+    width: 150px;
+}
+
+.image-container-1 img {
+    max-width: 60%;
+    height: auto;
+    width: 350px;
 }
 
 .parent-flex {
