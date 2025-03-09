@@ -384,6 +384,7 @@
     text-align: right;
 }
 
-.Skills {
+.Skills, .Education, .Relevant-Coursework {
     text-align: right;
+    font-family: Baskerville;
 }
