@@ -202,7 +202,10 @@
 .image-container-1 img {
     max-width: 60%;
     height: auto;
-    width: 350px;
+    width: 350px !important;
+}
+.image-container-1 figcaption {
+    font-size: 15px !important;
 }
 
 .parent-flex {
