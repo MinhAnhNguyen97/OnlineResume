@@ -24,7 +24,7 @@
     /* justify-content: flex-start;
     width: 60px; /* Adjust logo size */
     display: flex;
-    width: 60px;
+    width: 60px !important;
     height: 60px;
    /*display: block; */
     justify-self: flex-start; /* Align the logo to the left */
@@ -355,26 +355,31 @@
 }
 .a-few-words p {
     padding-left: 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: Baskerville;
 }
 
 .TitlesRoles {
     text-indent: 40px;
     font-family: Baskerville;
+    font-size: 16px;
 }
 .Titles {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    /*background-color:  #B9E1E4; */
+    font-size: 30px;
 }
 
 .Name {
     text-align: right;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
 }
 .Name p {
-    font-size: 30px;
+    font-size: 25px;
+    /*background-color: #B9E1E4; */
+    display: inline-block;
+    font-family: Baskerville;
+    font-weight: bold;
 }
 .Education {
     text-align: right;
@@ -388,3 +393,4 @@
     text-align: right;
     font-family: Baskerville;
 }
+
