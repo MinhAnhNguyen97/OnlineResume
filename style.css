@@ -356,7 +356,7 @@
 }
 .a-few-words p {
     padding-left: 20px;
-    font-size: 16px;
+    font-size: 18px;
     font-family: Baskerville;
 }
 
@@ -417,4 +417,28 @@
 .Tableau-Project p {
     font-size: 16px;
     font-family:'Courier New', Courier, monospace;
+}
+
+.machine-flex img {
+    width: 350px;
+    height: auto;
+    padding: 2px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.Machine-Project-flexbox-1 {
+    display: flex; /* Enables Flexbox */
+    flex-direction: column;
+    justify-content: space-around; /* Even spacing between boxes */
+    align-items: center;
+    flex-direction: row;
+    gap:20px;
+}
+
+.arrow {
+    font-size: 2rem;
+    margin: 0 px;
+    align-self: center;
 }
