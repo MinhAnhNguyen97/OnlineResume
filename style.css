@@ -140,7 +140,8 @@
     font-size: 30px;
 }
 .text-background {
-    padding: 50px;
+    padding: 200px;
+    min-height: 400px;
     margin-bottom: 30px; /* Adds space below the first div */
     background-image: url(images/IMG_6451.JPG); /* Replace with your image URL */
     background-size: cover; /* Ensures the image covers the entire element */
@@ -153,6 +154,9 @@
     text-align: center; /* Centers the text */
     font-size: 65px;
     font-family: 'Courier New', Courier, monospace;
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
 }
 
 
