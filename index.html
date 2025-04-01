@@ -48,26 +48,33 @@
                     <div class="flex-container-1">
                         <div class="data-project-container">
                             <a href="machinepage.html">Machine/Deep Learning</a>
-                            <figure>
-                                <img src="images/Untitled-2.png" alt="Project 1" width="100" />
-                            </figure>
+                            <div class="image-slider">
+                                <div class="image-track">
+                                  <img src="images/Slide9.png" alt="Slide 1" width="280" />
+                                  <img src="images/Slide7.png" alt="Slide 1" width="280" />
+                                  <img src="images/Slide10.png" alt="Slide 1" width="280" />
+                                  <img src="images/Slide6.png" alt="Slide 2" width="280" />
+                                  <img src="images/Slide8.png" alt="Slide 2" width="280" />
+                                  <img src="images/Slide11.png" alt="Slide 2" width="280" />
+                                </div>
+                            </div>
                         </div>
                         <div class="data-project-container">
                             <a href="tableaupage.html">Tableau</a>
                             <figure>
-                                <img src="images/Untitled-1.png" alt="Project 1" width="100" />
+                                <img src="images/quiz2.png" alt="Project 1" class="responsive-image" />
                             </figure>
                         </div>
                         <div class="data-project-container">
                             <a href="statspage.html">Statistical Analysis</a>
                             <figure>
-                                <img src="images/Untitled.png" alt="Project 1" width="100" />
+                                <img src="images/Picture8.png" alt="Project 1" class="responsive-image" />
                             </figure>
                         </div>
                         <div class="data-project-container">
                             <a href="sqloracleapexpage.html">SQL</a>
                             <figure>
-                                <img src="images/Untitled-5.png" alt="Project 1" width="100" />
+                                <img src="images/Inventory.png" alt="Project 1" class="responsive-image" />
                             </figure>
                         </div>
                     </div>        
@@ -85,11 +92,13 @@
                         
                         <div class="image-container">
                             <figure>
-                                <img src="images/Untitled-4.png" alt="Image 2">
+                                <img src="images/Untitled-4.1.png" alt="Image 2">
                             </figure>
                             <a href="artstilllifepage.html">Still Life Drawing</a>
                         </div>
                     
+                        <div class="image-container">
+                        </div>
                         <div class="image-container">
                         </div>
                     </div>
@@ -100,5 +109,16 @@
                     <div class="footer-section"><a href="contactpage.html">CONTACT</a></div>
                 </footer>
         </div>  
+        <script>
+            // Select the first slider only (Machine/Deep Learning)
+            const slider = document.querySelector('.data-project-container .image-track');
+            const images = slider.querySelectorAll('img');
+            let index = 0;
+          
+            setInterval(() => {
+              index = (index + 1) % images.length;
+              slider.style.transform = `translateX(-${index * 100}%)`;
+            }, 3000); // every 3 seconds
+          </script>
     </body>
 </html>

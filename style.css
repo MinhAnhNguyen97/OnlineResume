@@ -407,7 +407,9 @@
     text-align: right;
     font-family: Baskerville;
 }
-
+.References {
+    text-align: left;
+}
 .Tableau-Project img {
     width: 1000px;
     height: auto;
@@ -491,5 +493,31 @@
     font-family:'Courier New', Courier, monospace;
 }
 
-
+.image-slider {
+    width: 100%;
+    max-width: 1000px; /* optional, limit max size */
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+  }
   
+  .image-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .image-track img {
+    width: 100%;
+    height: auto;
+    flex: 0 0 100%;
+    object-fit: contain;
+    display: block;
+  }
+  
+  .responsive-image {
+    width: 100%;
+    max-width: 1000px; /* optional, to prevent overly large images */
+    height: auto;
+    display: block;
+    margin: auto;
+  }
