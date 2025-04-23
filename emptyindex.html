@@ -1,0 +1,47 @@
+<!--- <!DOCTYPE html>
+
+<body>
+    <input type="text" placeholder="Enter your name"></input>
+    <h1>Welcome to My Website</h1>
+    <button id="openModalBtn">Start</button>
+    <script src="empty.js"></script>
+</body> --->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Start Timer</title>
+  <link rel="stylesheet" href = "style2.css">
+</head>
+<body>
+
+<h1>Timer: <span id="timer">0</span> seconds</h1>
+
+<button onclick="startTimer()">Start Timer</button>
+<button onclick="stopTimer()">Stop Timer</button>
+
+<!--- <script>
+  let count = 0;
+  let timerId;
+
+  function startTimer() {
+    if (!timerId) {
+      timerId = setInterval(() => {
+        count++;
+        document.getElementById("timer").innerText = count;
+      }, 1000); // every 1 second
+    }
+  }
+</script> --->
+ <!--- if idle > 10 seconds, make a window pop up --->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close">&times;</span>
+      <p>This is a modal window!</p>
+    </div>
+</div>
+<script src="empty.js"></script>
+<script src="data2/contentsbutton.js"></script>
+</body>
+</html>
